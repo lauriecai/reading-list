@@ -203,16 +203,18 @@ const toggleBooksContainer = (isVisible) => {
 // flow
 // - data
 const myReadingList = [
-  new Book('Salt, Fat, Acid, Heat', 'Samin Nosrat', 480),
-  new Book('The Omnivore’s Dilemma', 'Michael Pollan', 450),
-  new Book('Kitchen Confidential', 'Anthony Bourdain', 320),
-  new Book('The Joy of Cooking', 'Irma S. Rombauer', 1152),
-  new Book('The Art of Simple Food', 'Alice Waters', 416),
-  new Book('On Food and Cooking: The Science and Lore of the Kitchen', 'Harold McGee', 896),
-  new Book('Mastering the Art of French Cooking', 'Julia Child', 684),
-  new Book('How to Cook Everything', 'Mark Bittman', 1056),
-  new Book('Animal, Vegetable, Miracle', 'Barbara Kingsolver', 384),
-  new Book('The Flavor Bible', 'Karen Page, Andrew Dornenburg', 392)
+  // books for testing purposes
+
+  // new Book('Salt, Fat, Acid, Heat', 'Samin Nosrat', 480),
+  // new Book('The Omnivore’s Dilemma', 'Michael Pollan', 450),
+  // new Book('Kitchen Confidential', 'Anthony Bourdain', 320),
+  // new Book('The Joy of Cooking', 'Irma S. Rombauer', 1152),
+  // new Book('The Art of Simple Food', 'Alice Waters', 416),
+  // new Book('On Food and Cooking: The Science and Lore of the Kitchen', 'Harold McGee', 896),
+  // new Book('Mastering the Art of French Cooking', 'Julia Child', 684),
+  // new Book('How to Cook Everything', 'Mark Bittman', 1056),
+  // new Book('Animal, Vegetable, Miracle', 'Barbara Kingsolver', 384),
+  // new Book('The Flavor Bible', 'Karen Page, Andrew Dornenburg', 392)
 ];
 
 let activeOptionsMenu = null;
