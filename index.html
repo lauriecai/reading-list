@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading List</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="content-wrapper">
+    <header>
+      <h1 class="title">Reading List</h1>
+      <button data-add-book-button=".add-book-modal" class="button">Add Book</button>
+    </header>
+
+    <div data-null-state-container class="null-state-container">
+      <img src="./images/reading-illustration.svg" alt="">
+      <div class="message">
+        <p class="messageHeader">Add a book to get started!</p>
+        <p class="messageDescription">Books in your reading list will appear here once added.</p>
+      </div>
+    </div>
+
+    <div data-books-container class="books-container">
+    </div>
+
+    <div data-add-book-modal class="add-book-modal">
+      <div class="modal-header">
+        <h2 class="title">Add Book</h2>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="add-book-form">
+          <div class="text-form-group title-form-group">
+            <label for="book-title">Title</label>
+            <input data-title-input type="text" name="book-title" id="book-title" autocomplete="off">
+            <div data-error-message class="error"></div>
+          </div>
+          <div class="text-form-group author-form-group">
+            <label for="book-author">Author</label>
+            <input data-author-input type="text" name="book-author" id="book-author" autocomplete="off">
+            <div data-error-message class="error"></div>
+          </div>
+          <div class="text-form-group num-of-pages-form-group">
+            <label for="num-of-pages">Number of Pages</label>
+            <input data-num-of-pages-input type="text" name="num-of-pages" id="num-of-pages" autocomplete="off">
+            <div data-error-message class="error"></div>
+          </div>
+          <div class="radio-form-group read-form-group">
+            <h3 class="prompt">Have you read this book?</h3>
+            <div class="read-status-options-container">
+              <div class="radio-option">
+                <input type="radio" name="read-status-option" id="no" checked>
+                <label for="no">No</label>
+              </div>
+              <div class="radio-option">
+                <input data-read-indicator type="radio" name="read-status-option" id="in-progress">
+                <label for="in-progress">In Progress</label>
+              </div>
+              <div class="radio-option">
+                <input data-read-indicator type="radio" name="read-status-option" id="finished">
+                <label for="finished">Finished</label>
+              </div>
+            </div>
+          </div>
+          <button data-submit-book-button class="button" type="submit">Add Book</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
