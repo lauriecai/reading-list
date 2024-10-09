@@ -18,21 +18,21 @@ const closeModalButton = $('[data-close-button]');
 
 // functions
 // - object
-function Book(title, author, numOfPages, haveRead) {
-  this.title = title;
-  this.author = author;
-  this.numOfPages = numOfPages;
-  this.haveRead = haveRead;
-}
+class Book {
+  constructor(title, author, numOfPages, haveRead) {
+    this.title = title;
+    this.author = author;
+    this.numOfPages = numOfPages;
+    this.haveRead = haveRead;
+  }
 
-Book.prototype.addToReadingList = function (readingListName) {
-  readingListName.unshift(this);
-  console.log('reading list!!')
-  console.log({ readingListName })
-}
+  addToReadingList(readingListName) {
+    readingListName.unshift(this);
+  }
 
-Book.prototype.toggleReadStatus = function () {
-  this.haveRead = !this.haveRead;
+  toggleReadStatus() {
+    this.haveRead = !this.haveRead;
+  }
 }
 
 // - data
